@@ -1,0 +1,546 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`matches snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="min-h-full w-screen flex items-center justify-center pt-0 m-auto  px-4 sm:px-6 lg:px-8"
+  >
+    <div
+      class="max-w-md w-screen space-y-8"
+    >
+      <div>
+        <img
+          alt="BookFriend"
+          class="mx-auto h-30 w-auto p-0 m-0"
+          src="./bookfriendimg1.png"
+        />
+        <h2
+          class="mt-6 text-center text-3xl font-extrabold text-gray-900"
+        >
+          Sign in to your account
+        </h2>
+      </div>
+      <form
+        action="#"
+        class="mt-8 space-y-6"
+        method="POST"
+      >
+        <input
+          name="remember"
+          type="hidden"
+          value="true"
+        />
+        <div
+          class="rounded-md shadow-sm -space-y-px"
+        >
+          <div>
+            <label
+              class="sr-only"
+              for="email-address"
+            >
+              Email address
+            </label>
+            <input
+              autocomplete="email"
+              class="appearance-none rounded-none relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 rounded-t-md focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 focus:z-10 sm:text-sm"
+              id="email-address"
+              name="email"
+              placeholder="Email address"
+              required=""
+              type="email"
+              value=""
+            />
+          </div>
+          <div>
+            <label
+              class="sr-only"
+              for="password"
+            >
+              Password
+            </label>
+            <input
+              autocomplete="current-password"
+              class="appearance-none rounded-none relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 rounded-b-md focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 focus:z-10 sm:text-sm"
+              id="password"
+              name="password"
+              placeholder="Password"
+              required=""
+              type="password"
+              value=""
+            />
+          </div>
+        </div>
+        <div
+          class="flex items-center justify-between"
+        >
+          <button
+            class="group relative w-full flex justify-center py-2 px-4 border border-transparent text-sm font-medium rounded-md text-black bg-white hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+            type="submit"
+          >
+            <span
+              class="absolute left-0 inset-y-0 flex items-center pl-3"
+            >
+              <svg
+                aria-hidden="true"
+                class="h-5 w-5 text-indigo-500 group-hover:text-indigo-400"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  clip-rule="evenodd"
+                  d="M5 9V7a5 5 0 0110 0v2a2 2 0 012 2v5a2 2 0 01-2 2H5a2 2 0 01-2-2v-5a2 2 0 012-2zm8-2v2H7V7a3 3 0 016 0z"
+                  fill-rule="evenodd"
+                />
+              </svg>
+            </span>
+            Register
+          </button>
+        </div>
+        <div>
+          <button
+            class="group relative w-full flex justify-center py-2 px-4 border border-transparent text-sm font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+            type="submit"
+          >
+            <span
+              class="absolute left-0 inset-y-0 flex items-center pl-3"
+            >
+              <svg
+                aria-hidden="true"
+                class="h-5 w-5 text-indigo-500 group-hover:text-indigo-400"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  clip-rule="evenodd"
+                  d="M5 9V7a5 5 0 0110 0v2a2 2 0 012 2v5a2 2 0 01-2 2H5a2 2 0 01-2-2v-5a2 2 0 012-2zm8-2v2H7V7a3 3 0 016 0z"
+                  fill-rule="evenodd"
+                />
+              </svg>
+            </span>
+            Sign in
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+  <div
+    class="min-h-full w-screen flex items-center justify-center pt-0  px-4 sm:px-6 lg:px-8"
+  >
+    <div
+      class="max-w-2xl w-screen mx-auto"
+    >
+      <div>
+        <img
+          alt="BookFriend"
+          class="mx-auto h-30 p-0 m-0 pt-0"
+          src="./bookfriendimg1.png"
+        />
+        <h2
+          class="mt-6 text-center text-3xl font-extrabold text-gray-900"
+        >
+          Register for your account
+        </h2>
+      </div>
+      <form
+        action="#"
+        class="mt-8 space-y-6 pb-6"
+        method="POST"
+      >
+        <div
+          class="rounded-md shadow-sm -space-y-px"
+        >
+          <div>
+            <label
+              class="sr-only"
+              for="user_first_name"
+            >
+              First Name
+            </label>
+            <input
+              autocomplete="first_name"
+              class="appearance-none rounded-none relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 rounded-t-md focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 focus:z-10 sm:text-sm"
+              id="user_first_name"
+              name="user_first_name"
+              placeholder="First Name"
+              required=""
+              type="text"
+              value=""
+            />
+          </div>
+          <div>
+            <label
+              class="sr-only"
+              for="user_last_name"
+            >
+              Last Name
+            </label>
+            <input
+              autocomplete="last_name"
+              class="appearance-none rounded-none relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 rounded-m-md focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 focus:z-10 sm:text-sm"
+              id="user_last_name"
+              name="user_last_name"
+              placeholder="Last Name"
+              required=""
+              type="text"
+              value=""
+            />
+          </div>
+          <div>
+            <label
+              class="sr-only"
+              for="email-address"
+            >
+              Email address
+            </label>
+            <input
+              autocomplete="email"
+              class="appearance-none rounded-none relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 rounded-m-md focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 focus:z-10 sm:text-sm"
+              id="email-address"
+              name="email"
+              placeholder="Email address"
+              required=""
+              type="email"
+              value=""
+            />
+          </div>
+          <div>
+            <label
+              class="sr-only"
+              for="password"
+            >
+              Password
+            </label>
+            <input
+              autocomplete="current-password"
+              class="appearance-none rounded-none relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 rounded-b-md focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 focus:z-10 sm:text-sm"
+              id="password"
+              name="password"
+              placeholder="Password"
+              required=""
+              type="password"
+              value=""
+            />
+          </div>
+        </div>
+        <div
+          class="text-sm"
+        >
+          <button
+            class="group relative w-full flex justify-center py-2 px-4 border border-transparent text-sm font-medium rounded-md text-black bg-white hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+            type="submit"
+          >
+            <span
+              class="absolute left-0 inset-y-0 flex items-center pl-3"
+            >
+              <svg
+                aria-hidden="true"
+                class="h-5 w-5 text-indigo-500 group-hover:text-indigo-400"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  clip-rule="evenodd"
+                  d="M5 9V7a5 5 0 0110 0v2a2 2 0 012 2v5a2 2 0 01-2 2H5a2 2 0 01-2-2v-5a2 2 0 012-2zm8-2v2H7V7a3 3 0 016 0z"
+                  fill-rule="evenodd"
+                />
+              </svg>
+            </span>
+            Login
+          </button>
+        </div>
+        <div>
+          <button
+            class="group relative w-full flex justify-center py-2 px-4 border border-transparent text-sm font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+            type="submit"
+          >
+            <span
+              class="absolute left-0 inset-y-0 flex items-center pl-3"
+            >
+              <svg
+                aria-hidden="true"
+                class="h-5 w-5 text-indigo-500 group-hover:text-indigo-400"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  clip-rule="evenodd"
+                  d="M5 9V7a5 5 0 0110 0v2a2 2 0 012 2v5a2 2 0 01-2 2H5a2 2 0 01-2-2v-5a2 2 0 012-2zm8-2v2H7V7a3 3 0 016 0z"
+                  fill-rule="evenodd"
+                />
+              </svg>
+            </span>
+            Register
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+  <div
+    class="min-h-full w-screen"
+  >
+    <nav
+      class="bg-gray-800 w-screen"
+    >
+      <div
+        class="min-w-full"
+      >
+        <div
+          class="flex items-center justify-between h-16"
+        >
+          <div
+            class="flex items-center"
+          >
+            <div
+              class="flex-shrink-0"
+            >
+              <img
+                alt="BookFriend"
+                class="h-20 w-20"
+                src="./bookfriendimg.png"
+              />
+            </div>
+            <div
+              class="hidden md:block"
+            >
+              <div
+                class="ml-10 flex items-baseline space-x-4"
+              >
+                <a
+                  class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
+                  href="/users/undefined"
+                >
+                  Profile
+                </a>
+              </div>
+            </div>
+          </div>
+          <div
+            class="hidden md:block"
+          >
+            <div
+              class="ml-4 flex items-center md:ml-6"
+            >
+              <div
+                class="ml-3 relative"
+              />
+            </div>
+          </div>
+          <div
+            class="-mr-2 flex md:hidden"
+          >
+            <button
+              aria-expanded="false"
+              class="bg-gray-800 inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white"
+              id="headlessui-disclosure-button-3"
+              type="button"
+            >
+              <span
+                class="sr-only"
+              >
+                Open main menu
+              </span>
+              <svg
+                aria-hidden="true"
+                class="block h-6 w-6"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M4 6h16M4 12h16M4 18h16"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <header
+      class="bg-white shadow "
+    >
+      <div
+        class="min-w-full mx-auto py-6 px-4 sm:px-6 lg:px-8"
+      >
+        <h1
+          class="text-3xl font-bold text-gray-900"
+        >
+           Dashboard 
+        </h1>
+        <button
+          class="bg-indigo-500 hover:bg-indigo-700 text-white font-bold py-2 px-4 rounded"
+          type="submit"
+        >
+          <span
+            class="absolute left-0 inset-y-0 flex items-center pl-3"
+          />
+          Log Out
+        </button>
+      </div>
+    </header>
+    <main>
+      <div
+        class="max-w-7xl mx-auto py-6 sm:px-6 lg:px-8"
+      >
+        <div
+          class="px-4 py-6 sm:px-0"
+        >
+          <h2>
+            Welcome  
+          </h2>
+          <div>
+            <h1
+              class="text-center text-lg leading-6 font-medium px-4 py-5 "
+            >
+              Search for Author Information
+            </h1>
+            <form>
+              <input
+                class="appearance-none rounded-none relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 rounded-t-md focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 focus:z-10 sm:text-sm"
+                name="first_name"
+                placeholder="First Name"
+                type="text"
+                value=""
+              />
+              <input
+                class="appearance-none rounded-none relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 rounded-m-md focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 focus:z-10 sm:text-sm"
+                name="last_name"
+                placeholder="Last Name"
+                type="text"
+                value=""
+              />
+              <div
+                class="d-grid gap-2"
+              >
+                <button
+                  class="group relative w-full flex justify-center py-2 px-4 border border-transparent text-sm font-medium rounded-b-md text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+                  type="submit"
+                >
+                   Search for Author Information 
+                </button>
+              </div>
+            </form>
+          </div>
+          <div>
+            <h1
+              class="text-center text-lg leading-6 px-4 py-5 font-medium "
+            >
+              Search for All Works by an Author 
+            </h1>
+            <form>
+              <input
+                class="appearance-none rounded-none relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 rounded-t-md focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 focus:z-10 sm:text-sm"
+                id="first_name"
+                name="first_name"
+                placeholder="First Name"
+                type="text"
+                value=""
+              />
+              <input
+                class="appearance-none rounded-none relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 rounded-t-md focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 focus:z-10 sm:text-sm"
+                id="last_name"
+                name="last_name"
+                placeholder="Last Name"
+                type="text"
+                value=""
+              />
+              <div
+                class="d-grid gap-2"
+              >
+                <button
+                  class="group relative w-full flex justify-center py-2 px-4 border border-transparent text-sm font-medium rounded-b-md text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+                  type="submit"
+                >
+                   Search for Works of Author 
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
+  <div>
+    <form>
+      <div
+        class="flex items-center justify-center h-screen w-screen bg-gray-100"
+      >
+        <div
+          class="bg-white py-6 rounded-md px-10  shadow-md"
+        >
+          <img
+            alt="BookFriend"
+            class="mx-auto h-30 w-auto p-0 m-0"
+            src="./bookfriendimg1.png"
+          />
+          <h1
+            class="text-center text-lg font-bold text-gray-500"
+          >
+            Edit Profile Info
+          </h1>
+          <div
+            class="space-y-4 mt-6"
+          >
+            <div
+              class="w-full"
+            >
+              <input
+                class="px-4 py-2 bg-gray-50 w-full"
+                name="firstName"
+                placeholder="First Name"
+                type="text"
+                value=""
+              />
+            </div>
+            <div
+              class="w-full"
+            >
+              <input
+                class="px-4 py-2 bg-gray-50 w-full"
+                name="lastName"
+                placeholder="Last Name"
+                type="text"
+                value=""
+              />
+            </div>
+            <div
+              class="w-full"
+            >
+              <input
+                class="px-4 py-2 bg-gray-50 w-full"
+                name="email"
+                placeholder="Email"
+                type="text"
+                value=""
+              />
+            </div>
+            <div
+              class="w-full"
+            >
+              <input
+                class="px-4 py-2 bg-gray-50 w-full"
+                name="password"
+                placeholder="Password"
+                type="password"
+                value=""
+              />
+            </div>
+          </div>
+          <button
+            class="w-full mt-5 bg-indigo-600 text-white py-2 rounded-md font-semibold tracking-tight"
+          >
+            Save Changes
+          </button>
+        </div>
+      </div>
+    </form>
+  </div>
+</DocumentFragment>
+`;

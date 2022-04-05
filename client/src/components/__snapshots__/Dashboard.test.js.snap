@@ -1,0 +1,194 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`matches snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="min-h-full w-screen"
+  >
+    <nav
+      class="bg-gray-800 w-screen"
+    >
+      <div
+        class="min-w-full"
+      >
+        <div
+          class="flex items-center justify-between h-16"
+        >
+          <div
+            class="flex items-center"
+          >
+            <div
+              class="flex-shrink-0"
+            >
+              <img
+                alt="BookFriend"
+                class="h-20 w-20"
+                src="./bookfriendimg.png"
+              />
+            </div>
+            <div
+              class="hidden md:block"
+            >
+              <div
+                class="ml-10 flex items-baseline space-x-4"
+              >
+                <a
+                  class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
+                  href="/users/undefined"
+                >
+                  Profile
+                </a>
+              </div>
+            </div>
+          </div>
+          <div
+            class="hidden md:block"
+          >
+            <div
+              class="ml-4 flex items-center md:ml-6"
+            >
+              <div
+                class="ml-3 relative"
+              />
+            </div>
+          </div>
+          <div
+            class="-mr-2 flex md:hidden"
+          >
+            <button
+              aria-expanded="false"
+              class="bg-gray-800 inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white"
+              id="headlessui-disclosure-button-1"
+              type="button"
+            >
+              <span
+                class="sr-only"
+              >
+                Open main menu
+              </span>
+              <svg
+                aria-hidden="true"
+                class="block h-6 w-6"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M4 6h16M4 12h16M4 18h16"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <header
+      class="bg-white shadow "
+    >
+      <div
+        class="min-w-full mx-auto py-6 px-4 sm:px-6 lg:px-8"
+      >
+        <h1
+          class="text-3xl font-bold text-gray-900"
+        >
+           Dashboard 
+        </h1>
+        <button
+          class="bg-indigo-500 hover:bg-indigo-700 text-white font-bold py-2 px-4 rounded"
+          type="submit"
+        >
+          <span
+            class="absolute left-0 inset-y-0 flex items-center pl-3"
+          />
+          Log Out
+        </button>
+      </div>
+    </header>
+    <main>
+      <div
+        class="max-w-7xl mx-auto py-6 sm:px-6 lg:px-8"
+      >
+        <div
+          class="px-4 py-6 sm:px-0"
+        >
+          <h2>
+            Welcome  
+          </h2>
+          <div>
+            <h1
+              class="text-center text-lg leading-6 font-medium px-4 py-5 "
+            >
+              Search for Author Information
+            </h1>
+            <form>
+              <input
+                class="appearance-none rounded-none relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 rounded-t-md focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 focus:z-10 sm:text-sm"
+                name="first_name"
+                placeholder="First Name"
+                type="text"
+                value=""
+              />
+              <input
+                class="appearance-none rounded-none relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 rounded-m-md focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 focus:z-10 sm:text-sm"
+                name="last_name"
+                placeholder="Last Name"
+                type="text"
+                value=""
+              />
+              <div
+                class="d-grid gap-2"
+              >
+                <button
+                  class="group relative w-full flex justify-center py-2 px-4 border border-transparent text-sm font-medium rounded-b-md text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+                  type="submit"
+                >
+                   Search for Author Information 
+                </button>
+              </div>
+            </form>
+          </div>
+          <div>
+            <h1
+              class="text-center text-lg leading-6 px-4 py-5 font-medium "
+            >
+              Search for All Works by an Author 
+            </h1>
+            <form>
+              <input
+                class="appearance-none rounded-none relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 rounded-t-md focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 focus:z-10 sm:text-sm"
+                id="first_name"
+                name="first_name"
+                placeholder="First Name"
+                type="text"
+                value=""
+              />
+              <input
+                class="appearance-none rounded-none relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 rounded-t-md focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 focus:z-10 sm:text-sm"
+                id="last_name"
+                name="last_name"
+                placeholder="Last Name"
+                type="text"
+                value=""
+              />
+              <div
+                class="d-grid gap-2"
+              >
+                <button
+                  class="group relative w-full flex justify-center py-2 px-4 border border-transparent text-sm font-medium rounded-b-md text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+                  type="submit"
+                >
+                   Search for Works of Author 
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
+</DocumentFragment>
+`;
