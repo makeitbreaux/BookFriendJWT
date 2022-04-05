@@ -4,19 +4,19 @@ An app to search your favorite authors and the books that they have written!
 
 #### Register
 
-![Register](https://github.com/makeitbreaux/BookFriendJWT/blob/master/public/RegisterBF.png)
+![Register](https://github.com/makeitbreaux/BookFriendJWT/blob/master/client/public/RegisterBF.png)
 
 #### Dashboard
 
-![Dashboard](https://github.com/makeitbreaux/BookFriendJWT/blob/master/public/DashboardBF.png)
+![Dashboard](https://github.com/makeitbreaux/BookFriendJWT/blob/master/client/public/DashboardBF.png)
 
 #### Author Search
 
-![AuthorSearch](https://github.com/makeitbreaux/BookFriendJWT/blob/master/public/AuthorSearchBF.png)
+![AuthorSearch](https://github.com/makeitbreaux/BookFriendJWT/blob/master/client/public/AuthorSearchBF.png)
 
 #### Works Search
 
-![WorksSearch](https://github.com/makeitbreaux/BookFriendJWT/blob/master/public/WorksSearchBF.png)
+![WorksSearch](https://github.com/makeitbreaux/BookFriendJWT/blob/master/client/public/WorksSearchBF.png)
 
 ## Description
 
