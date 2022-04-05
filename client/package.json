@@ -39,9 +39,7 @@
     "npm": "7.21.1"
   },
   "scripts": {
-    "prestart": "sed -i 's/enabled: true/enabled: false/' tailwind.config.js",
     "start": "craco start",
-    "prebuild": "sed -i 's/enabled: false/enabled: true/' tailwind.config.js",
     "build": " craco build ",
     "test": "craco test",
     "eject": "react-scripts eject"
