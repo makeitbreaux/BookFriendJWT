@@ -41,8 +41,8 @@
     "npm": "7.21.1"
   },
   "scripts": {
-    "start": "craco start",
-    "build": " craco build ",
+    "start": "react-scripts start",
+    "build": " react-scripts build ",
     "test": "craco test",
     "eject": "react-scripts eject"
   },
