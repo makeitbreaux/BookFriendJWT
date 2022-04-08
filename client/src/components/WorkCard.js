@@ -1,9 +1,12 @@
 import React from "react";
-
-
+import PropTypes from 'prop-types';
 function WorkCard({name, works}) {
 
-  console.log(works)
+  WorkCard.propTypes = {
+    name: PropTypes.string,
+    works: PropTypes.string
+  }
+
 return (
   <div className="bg-white shadow overflow-hidden sm:rounded-lg">
     <div className="px-4 py-5 sm:px-6">
@@ -21,8 +24,8 @@ return (
           <dt className="text-sm font-medium text-gray-500">Works</dt>
             {works.map(work => {
               return (
-                <div>
-                  <ul class="list-disc">
+                <div key={work}>
+                  <ul className="list-disc">
                     <li key={work.toString()}>
                       <dd className="mt-1 text-sm text-gray-900 sm:mt-0 sm:col-span-2">{work.title}</dd>
                     </li>

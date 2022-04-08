@@ -1,8 +1,13 @@
 import React, {Fragment, useState} from "react";
 import { useHistory } from "react-router-dom";
 import { toast } from "react-toastify";
+import PropTypes from 'prop-types';
 
 const Register = ({setAuth}) => {
+
+Register.propTypes = {
+  setAuth: PropTypes.function
+}  
     
     const [inputs, setInputs] = useState({
         user_first_name: "",

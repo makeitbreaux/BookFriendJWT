@@ -1,10 +1,14 @@
 import React, { useState } from "react";
 import { toast } from "react-toastify";
-// import UserContext from "../UserContext";
-// import {useParams} from "react-router-dom";
+import PropTypes from 'prop-types';
 
 function ProfileEditForm({currentUser}) {
-  const [user, setUser] = useState({})
+  
+ProfileEditForm.propTypes = {
+  currentUser: PropTypes.string
+}  
+  
+  // const [user, setUser] = useState({})
 
   const [formData, setFormData] = useState({
     firstName: currentUser.firstName,
@@ -53,7 +57,6 @@ function ProfileEditForm({currentUser}) {
 
   
   } catch (errors) {
-    debugger;
     setFormErrors(errors);
     return;
   }

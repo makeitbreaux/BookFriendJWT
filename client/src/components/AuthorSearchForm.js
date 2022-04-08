@@ -63,7 +63,6 @@ return (
                     type="text" 
                     name="first_name" 
                     placeholder="First Name" 
-                    className="form-control my-3"
                     value={first_name}
                     onChange={e => onChange(e)}
                     className="appearance-none rounded-none relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 rounded-t-md focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 focus:z-10 sm:text-sm"
@@ -72,7 +71,6 @@ return (
                     type="text" 
                     name="last_name" 
                     placeholder="Last Name" 
-                    className="form-control my-3"
                     value={last_name}
                     onChange={e => onChange(e)}
                     className="appearance-none rounded-none relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 rounded-m-md focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 focus:z-10 sm:text-sm"

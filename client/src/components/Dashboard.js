@@ -1,13 +1,18 @@
-import React, { useState, useEffect, useContext } from "react";
+import React from "react";
 // import { toast } from "react-toastify";
 import AuthorSearchForm from './AuthorSearchForm';
 import WorkSearchForm from './WorkSearchForm';
-import { Disclosure } from '@headlessui/react'
-import UserContext from "../UserContext";
-// import { useParams } from "react-router-dom";
+import { Disclosure} from '@headlessui/react';
+import { MenuIcon, XIcon } from '@heroicons/react/solid';
+import PropTypes from 'prop-types';
 
 const Dashboard = ({logout, currentUser}) => {
-//   const [id, setId] = useState("");
+
+Dashboard.propTypes = {
+  logout: PropTypes.function,
+  currentUser: PropTypes.string 
+}
+  //   const [id, setId] = useState("");
 //   const [name, setName] = useState("");
 //   const [email, setEmail] = useState("");
 //   const currentUser = useContext(UserContext);
@@ -25,7 +30,7 @@ const Dashboard = ({logout, currentUser}) => {
 //     getUserInfo();
 // });  
 // const  currentUser  = useContext(UserContext);
-const name = currentUser.user_first_name;    
+const name = currentUser.firstName;    
 const email = currentUser.email;      
   const user = {
       name: {name},
@@ -51,6 +56,15 @@ return (
       <div className="min-w-full">
       <div className="flex items-center justify-between h-16">
       <div className="flex items-center">
+                        {/* Mobile menu button*/}
+                        <Disclosure.Button className="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">
+                  <span className="sr-only">Open main menu</span>
+                  {open ? (
+                    <XIcon className="block h-6 w-6" aria-hidden="true" />
+                  ) : (
+                    <MenuIcon className="block h-6 w-6" aria-hidden="true" />
+                  )}
+                </Disclosure.Button>
       <div className="flex-shrink-0">
         <img
           className="h-20 w-20"

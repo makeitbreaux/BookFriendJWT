@@ -1,6 +1,14 @@
 import React from "react";
+import PropTypes from 'prop-types';
 
 function AuthorCard({authorName, birthDate, topWork, topSubjects}) {
+
+AuthorCard.propTypes = {
+  authorName: PropTypes.string,
+  birthDate: PropTypes.string,
+  topWork: PropTypes.string,
+  topSubjects: PropTypes.string
+}
 
 return (
   <div className="bg-white shadow overflow-hidden sm:rounded-lg">
