@@ -5,7 +5,6 @@ const bcrypt = require("bcrypt");
 const jwtGenerator = require("../utils/jwtGenerator");
 const validInfo = require("../middleware/validInfo");
 const authorization = require("../middleware/authorization");
-const { default: Register } = require("../../src/components/Register");
 
 // * REGISTER USER
 router.post("/register", validInfo, async (req, res) => {
@@ -29,7 +28,7 @@ router.post("/register", validInfo, async (req, res) => {
         
         //5. GENERATING OUR JWT TOKEN
         const token = jwtGenerator(newUser.rows[0].user_id);
-        return res.json(JSON.stringify({token}));
+        return res.send(JSON.stringify({token}));
         
     } catch (error) {
         console.error(error.message);
@@ -60,7 +59,7 @@ router.post("/login", validInfo, async (req, res) => {
 
         //4. GIVE USER JWT TOKEN
         const token = jwtGenerator(user.rows[0].user_id);
-        return res.json(JSON.stringify({token}));
+        return res.send(JSON.stringify({token}));
 
     } catch (error) {
         console.error(error.message);
