@@ -7,7 +7,7 @@ module.exports = async (req, res, next) => {
         const token = req.header("token");
         
         if (!token) {
-            return res.status(403).json("Not Authorized")
+            return res.status(403).json({ msg: "authorization denied" })
         }
         
         //2. IF YOU DO HAVE JWT, CHECK IF VALID
@@ -16,6 +16,6 @@ module.exports = async (req, res, next) => {
         next();
     } catch (error) {
         console.error(error.message);
-        return res.status(403).json("Not Authorized")
+        return res.status(401).json({ msg: "Token is not valid" })
     }
 }

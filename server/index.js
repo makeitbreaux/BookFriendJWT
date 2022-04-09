@@ -9,7 +9,7 @@ app.use(express.json());
 
 //ROUTES
 //REGISTER AND LOGIN ROUTES
-app.use("/auth", require("./routes/jwtAuth"))
+app.use("/authentication", require("./routes/jwtAuth"))
 
 //DASHBOARD ROUTE
 app.use("/dashboard", require("./routes/dashboard"));
