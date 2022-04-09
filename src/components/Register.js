@@ -35,7 +35,7 @@ Register.propTypes = {
 
             const response = await fetch("https://book-friend.herokuapp.com/auth/register", {
                 method: "POST",
-                headers: {"Content-type" : "application/json"},
+                headers: {"Content-type" : "application/json", token: localStorage.token },
                 body: JSON.stringify(body)
             })
 
