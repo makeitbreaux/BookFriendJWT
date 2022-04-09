@@ -43,7 +43,7 @@ ProfileEditForm.propTypes = {
             user_last_name: profileData.lastName,
             password: profileData.password};
             
-          const response = await fetch("http://localhost:5000/is-verify", {
+          const response = await fetch("https://book-friend.herokuapp.com/is-verify", {
             method: "PUT",
             headers: { 
               'Content-Type': 'application/json',

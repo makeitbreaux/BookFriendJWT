@@ -42,7 +42,7 @@ function App() {
   
   const getProfile = async () => {
       try {
-        const res = await fetch("http://localhost:5000/dashboard/", {
+        const res = await fetch("https://book-friend.herokuapp.com/dashboard/", {
           method: "GET",
           headers: { token: localStorage.token }
         });

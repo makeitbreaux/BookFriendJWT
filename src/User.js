@@ -8,7 +8,7 @@ const User = () => {
     
     useEffect(async () => {
         
-        let user = await fetch("http://localhost:5000/dashboard/", {
+        let user = await fetch("https://book-friend.herokuapp.com/dashboard/", {
             method: "GET",
             headers: { token: localStorage.token }
           });
