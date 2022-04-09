@@ -28,7 +28,7 @@ router.post("/register", validInfo, async (req, res) => {
         
         //5. GENERATING OUR JWT TOKEN
         const token = jwtGenerator(newUser.rows[0].user_id);
-        return res.send(JSON.stringify({token}));
+        return res.json({token});
         
     } catch (error) {
         console.error(error.message);
@@ -59,7 +59,7 @@ router.post("/login", validInfo, async (req, res) => {
 
         //4. GIVE USER JWT TOKEN
         const token = jwtGenerator(user.rows[0].user_id);
-        return res.send(JSON.stringify({token}));
+        return res.json({token});
 
     } catch (error) {
         console.error(error.message);
