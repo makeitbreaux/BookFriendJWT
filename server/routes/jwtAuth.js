@@ -1,6 +1,5 @@
 const express = require("express");
-const app = express();
-// const router = require("express").Router()
+const router = require("express").Router()
 const pool = require("../db")
 const bcrypt = require("bcrypt");
 const jwtGenerator = require("../utils/jwtGenerator");
@@ -8,7 +7,7 @@ const validInfo = require("../middleware/validInfo");
 const authorization = require("../middleware/authorization");
 
 // * REGISTER USER
-app.post("/register", validInfo, async (req, res) => {
+router.post("/register", validInfo, async (req, res) => {
         //1. DESTRUCTURE REQ.BODY => (NAME, EMAIL, PASSWORD)
     const {user_first_name, user_last_name, email, password} = req.body;
     try {
@@ -39,7 +38,7 @@ app.post("/register", validInfo, async (req, res) => {
 })
 
 // * LOGIN ROUTE
-app.post("/login", validInfo, async (req, res) => {
+router.post("/login", validInfo, async (req, res) => {
     try {
         //1. DESTRUCTURE REQ.BODY => (EMAIL, PASSWORD)
         const {email, password} = req.body;
@@ -69,7 +68,7 @@ app.post("/login", validInfo, async (req, res) => {
 })
 
 // * ENSURES USER IS VERIFIED
-app.post("/verify", authorization, async (req, res) => {
+router.post("/verify", authorization, async (req, res) => {
     try {
         res.json(true);
     } catch (error) {
