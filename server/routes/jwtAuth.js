@@ -1,5 +1,5 @@
 const express = require("express");
-const router = require("express").Router()
+const router = express.Router()
 const pool = require("../db")
 const bcrypt = require("bcrypt");
 const jwtGenerator = require("../utils/jwtGenerator");
