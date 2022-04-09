@@ -14,7 +14,7 @@ toast.configure();
 function App() {
   const checkAuthenticated = async () => {
     try {
-      const response = await fetch("https://book-friend.herokuapp.com/authentication/is-verify", {
+      const response = await fetch("https://book-friend.herokuapp.com/authentication/verify", {
         method: "GET",
         headers: {token : localStorage.token }
       })
