@@ -9,7 +9,7 @@ import PropTypes from 'prop-types';
 const Dashboard = ({logout, currentUser}) => {
 
 Dashboard.propTypes = {
-  logout: PropTypes.function,
+  logout: PropTypes.func,
   currentUser: PropTypes.string 
 }
   //   const [id, setId] = useState("");

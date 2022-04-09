@@ -6,7 +6,7 @@ import PropTypes from 'prop-types';
 const Login = ({setAuth}) => {
     
 Login.propTypes = {
-  setAuth: PropTypes.function
+  setAuth: PropTypes.func
 }
 
     const [inputs, setInputs] = useState({
