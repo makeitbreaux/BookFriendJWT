@@ -31,7 +31,7 @@ Login.propTypes = {
         try {
             const body = {email, password} ;
 
-            const response = await fetch("https://book-friend.herokuapp.com/authentication/login", {
+            const response = await fetch("https://book-friend.herokuapp.com/verify/login", {
                 method: "POST",
                 headers: {"Content-type" : "application/json" },
                 body: JSON.stringify(body)
