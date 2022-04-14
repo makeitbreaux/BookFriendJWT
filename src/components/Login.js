@@ -35,7 +35,7 @@ Login.propTypes = {
                 method: "POST",
                 headers: {"Content-type" : "application/json" },
                 body: JSON.stringify(body),
-                mode: 'cors'
+                mode: 'no-cors'
             })
 
             const parseRes = await response.json();
