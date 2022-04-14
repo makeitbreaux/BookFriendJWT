@@ -34,7 +34,8 @@ Login.propTypes = {
             const response = await fetch("https://book-friend.herokuapp.com/authentication/login", {
                 method: "POST",
                 headers: {"Content-type" : "application/json" },
-                body: JSON.stringify(body)
+                body: JSON.stringify(body),
+                mode: 'cors'
             })
 
             const parseRes = await response.json();
