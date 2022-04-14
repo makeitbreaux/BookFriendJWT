@@ -24,11 +24,11 @@ router.post("/register", validInfo, async (req, res) => {
         const bcryptPassword = await bcrypt.hash(password, salt);
 
         //4. ENTER THE NEW USER INTO DB
-        const newUser = await pool.query("INSERT INTO users (user_first_name, user_last_name, user_email, user_password) VALUES ($1, $2, $3, $4) RETURNING *", [user_first_name, user_last_name, email, bcryptPassword]);
+        let newUser = await pool.query("INSERT INTO users (user_first_name, user_last_name, user_email, user_password) VALUES ($1, $2, $3, $4) RETURNING *", [user_first_name, user_last_name, email, bcryptPassword]);
         
         //5. GENERATING OUR JWT TOKEN
         const token = jwtGenerator(newUser.rows[0].user_id);
-        res.send(JSON.stringify({token}));
+        res.json({token});
         
     } catch (error) {
         console.error(error.message);
@@ -59,7 +59,7 @@ router.post("/login", validInfo, async (req, res) => {
 
         //4. GIVE USER JWT TOKEN
         const token = jwtGenerator(user.rows[0].user_id);
-        res.send(JSON.stringify({token}));
+        res.json({token});
 
     } catch (error) {
         console.error(error.message);
