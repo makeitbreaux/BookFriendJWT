@@ -24,7 +24,7 @@ function App() {
       parseRes === true ? setIsAuthenticated(true) :
       setIsAuthenticated(false);
     } catch (err) {
-      console.error(err.message);
+      console.error(err);
     }
   }
 
@@ -56,7 +56,7 @@ function App() {
         setCurrentUser(id, email, firstName, lastName);
 
       } catch (err) {
-        console.error(err.message);
+        console.error(err);
       }
     };
 
@@ -67,7 +67,7 @@ function App() {
         setAuth(false);
         toast.success("Logged Out Successfully");
       } catch (err) {
-        console.error(err.message);
+        console.error(err);
       }
     };
 

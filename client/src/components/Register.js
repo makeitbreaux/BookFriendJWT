@@ -50,7 +50,7 @@ Register.propTypes = {
                 toast.error(parseRes);
               }
         } catch (error) {
-            console.error(error.message)
+            console.error(error)
         }
     }
 

@@ -51,7 +51,7 @@ const AuthorSearchForm = () => {
             setTopWork(parseRes.docs[0].top_work)
             setTopSubjects(parseRes.docs[0].top_subjects)
         } catch (err) {
-              console.error(err.message);
+              console.error(err);
             }
           };
 
