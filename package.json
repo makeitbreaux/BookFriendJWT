@@ -39,8 +39,9 @@
         "npm": "7.21.1"
     },
     "scripts": {
-        "start": "react-scripts start",
+        "start": "node server.js",
         "build": " react-scripts build ",
+        "heroku-postbuild": "cd client && npm install && npm run build",
         "test": "craco test",
         "eject": "react-scripts eject"
     },
