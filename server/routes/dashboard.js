@@ -6,7 +6,7 @@ router.get("/*", authorization, async (req, res) => {
     try {
   
         const user = await pool.query("SELECT user_first_name, user_last_name FROM users WHERE user_id = $1", [req.user.id]);
-        res.json(user.rows[0]);
+        return res.json(user.rows[0]);
 
     } catch (error) {
         console.error(error.message);
