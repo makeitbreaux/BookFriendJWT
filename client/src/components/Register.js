@@ -119,5 +119,4 @@ return (
   </Fragment>
     )
 }
-
 export default Register;
