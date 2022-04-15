@@ -31,7 +31,7 @@ Login.propTypes = {
         try {
             const body = {email, password} ;
 
-            const response = await fetch("/authentication/login", {
+            const response = await fetch("/login", {
                 method: "POST",
                 headers: {"Content-type" : "application/json" },
                 body: JSON.stringify(body)

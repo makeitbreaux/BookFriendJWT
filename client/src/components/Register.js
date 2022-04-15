@@ -33,7 +33,7 @@ Register.propTypes = {
         try {
             const body = { user_first_name, user_last_name, email, password} ;
 
-            const response = await fetch("/authentication/register", {
+            const response = await fetch("/register", {
                 method: "POST",
                 headers: {"Content-type" : "application/json"},
                 body: JSON.stringify(body)
