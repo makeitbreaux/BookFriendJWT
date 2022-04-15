@@ -3,9 +3,14 @@ const express = require("express");
 const app = express();
 const path = require("path");
 const cors = require("cors");
+const bodyParser = require('body-parser');
+
+
+
 
 //MIDDLEWARE
 app.use(cors());
+app.use(bodyParser.json());
 app.use(express.json());
 app.use(express.static(path.join(__dirname, 'build')));
 app.get('/*', (req, res) => {
