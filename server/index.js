@@ -10,12 +10,12 @@ const bodyParser = require('body-parser');
 
 //MIDDLEWARE
 app.use(cors());
-app.use(bodyParser.json());
 app.use(express.json());
 app.use(express.static(path.join(__dirname, 'build')));
 app.get('/*', (req, res) => {
   res.sendFile(path.join(__dirname, 'build', 'index.html'));
 });
+app.use(bodyParser.json());
 
 //ROUTES
 //REGISTER AND LOGIN ROUTES
@@ -25,7 +25,7 @@ app.use("/authentication", require("./routes/jwtAuth"))
 app.use("/dashboard", require("./routes/dashboard"));
 
 //USER PROFILE ROUTES
-app.use("/users", require("./routes/user"))
+// app.use("/users", require("./routes/user"))
 
 
 const PORT = process.env.PORT || 5000;
