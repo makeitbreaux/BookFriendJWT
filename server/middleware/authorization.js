@@ -4,7 +4,7 @@ require("dotenv").config();
 module.exports = async (req, res, next) => {
 
         //1. DESTRUCTURE THE TOKEN
-        const token = req.header("token");
+        const token = req.body.token;
         
         if (!token) {
             return res.status(403).json({ msg: "authorization denied" })

@@ -1,12 +1,13 @@
-const router = require("express").Router();
-const pool = require("../db");
+const Router = require("express").Router;
+const router = new Router();
+const client = require("../db");
 const authorization = require("../middleware/authorization");
 
 router.get("/*", authorization, async (req, res) => {
     try {
         //REQ.USER HAS THE PAYLOAD
         // let payload = res.json(req.user)
-        const user = await pool.query(`SELECT * FROM users WHERE user_id = $1`, [req.user]);
+        const user = await client.query(`SELECT * FROM users WHERE user_email = $1`, [req.body.user_email]);
         return res.json(user.rows[0]);
 
     } catch (error) {
