@@ -5,13 +5,14 @@ const bcrypt = require("bcrypt");
 const jwtGenerator = require("../utils/jwtGenerator");
 const validInfo = require("../middleware/validInfo");
 const authorization = require("../middleware/authorization");
+const { stringify } = require("postcss");
 
 // * REGISTER USER
 router.post("/register", validInfo, async (req, res) => {
         //1. DESTRUCTURE REQ.BODY => (NAME, EMAIL, PASSWORD)
     const {user_first_name, user_last_name, email, password} = req.body;
     try {
-        //2. CHECK IF USER EXISTS => (IF USER EXISTS, THROW ERROR)
+        // 2. CHECK IF USER EXISTS => (IF USER EXISTS, THROW ERROR)
         const user = await pool.query(`SELECT * FROM users WHERE user_email = $1`, [email]);
 
         if(user.rows.length > 0) {
