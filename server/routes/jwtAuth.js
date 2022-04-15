@@ -12,11 +12,11 @@ router.post("/register", validInfo, async (req, res) => {
         const {user_first_name, user_last_name, user_email, user_password} = req.body;
     try {
         // 2. CHECK IF USER EXISTS => (IF USER EXISTS, THROW ERROR)
-        const user = await client.query(`SELECT * FROM users WHERE user_email = $1`, [user_email]);
+        // const user = await client.query(`SELECT * FROM users WHERE user_email = $1`, [user_email]);
 
-        if(user.rows.length > 0) {
-            return res.status(401).json("User Already Exists");
-        }
+        // if(user.rows.length > 0) {
+        //     return res.status(401).json("User Already Exists");
+        // }
         
         //3. BCRYPT USER PASSWORD
         const saltRound = 10;
