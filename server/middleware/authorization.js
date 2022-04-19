@@ -5,7 +5,7 @@ module.exports = async (req, res, next) => {
 
         //1. DESTRUCTURE THE TOKEN
         // Get token from header
-        const token = req.header("token");
+        const token = req.headers("token");
         
         if (!token) {
             return res.status(403).json({ msg: "authorization denied" })
