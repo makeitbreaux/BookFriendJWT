@@ -6,8 +6,8 @@ const authorization = require("../middleware/authorization");
 router.get("/*", authorization, async (req, res) => {
     try {
         //REQ.USER HAS THE PAYLOAD
-        let payload = res.json(req.user)
-        const user = await client.query(`SELECT * FROM users WHERE user_id = $1`, [payload.id]);
+        // let payload = res.json(req.user)
+        const user = await client.query(`SELECT * FROM users WHERE user_id = $1`, [req.user_id]);
         return res.json(user.rows[0]);
 
     } catch (error) {
