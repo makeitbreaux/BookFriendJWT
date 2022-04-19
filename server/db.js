@@ -9,18 +9,12 @@
 //     database: "dcv1g06b0r0kgl"
 // });
 const { Client } = require("pg");
-process.env['NODE_TLS_REJECT_UNAUTHORIZED'] = 0;
 let client = new Client({
     username: process.env.DB_USERNAME,
     database: process.env.DB_DATABASE,
     password: process.env.DB_PASSWORD,
     host: process.env.DB_HOSTNAME,
     port: 5432,
-    ssl: true,
-    dialect: 'postgres',
-    dialectOptions: {
-      "ssl": {"require":true }
-    }
 })
 
 client.connect();
